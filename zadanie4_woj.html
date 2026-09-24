@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Wojciechowski 3F - zadanie 4</title>
+  <script type="text/javascript">
+    function okno_zamknij_z4()
+    {
+      window.close()
+    }
+  </script>
+  <style>
+    body { font-family: "Times New Roman", serif; font-size: 16px; }
+    p.q { font-weight: bold; margin: 10px 0 0 0; }
+    p.a { margin: 0; }
+    .ramka { border: 1px solid black; padding: 4px; margin: 4px 0; }
+  </style>
+</head>
+<body>
+
+<p class="q">1)kiedy powstał JavaScript (podaj datę).</p>
+<p class="a">JavaScript powstał w 1995 roku (w grudniu 1995 roku został zaimplementowany w ówczesnej wersji przeglądarki Netscape Navigator).</p>
+
+<p class="q">2)dlaczego jest to język skryptowy</p>
+<p class="a">Jest językiem skryptowym, czyli interpretowanym – nie trzeba go kompilować do kodu maszynowego, żeby zobaczyć efekty jego działania. Wystarczy przeglądarka internetowa, która go obsługuje.</p>
+
+<p class="q">3)gdzie jest wykonywany JS (klient lub serwer)</p>
+<p class="a">Po stronie klienta – w przeglądarce internetowej użytkownika (dzięki temu odciąża serwer). Przy użyciu Node.js można go też uruchamiać na serwerze.</p>
+
+<p class="q">4)dlaczego jest JS to bezpieczne narzędzie</p>
+<p class="a">Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone uprawnienia dostępu do zasobów komputera, na którym jest przeglądana strona.</p>
+
+<p class="q">5)czy jest to język obiektowy , jeśli tak to dlaczego.</p>
+<p class="a">Tak, jest to język programowania obiektowego, ponieważ wykorzystuje definicje obiektów, metod i zdarzeń, które opisują właściwości obiektów. Obiekty mają określoną strukturę opisaną przez DOM (Document Object Model). Można korzystać z gotowych obiektów i metod oraz tworzyć własne i modyfikować istniejące.</p>
+
+<p class="q">6)wymień zalety JS:</p>
+<p class="a">Zaleta1 – prostota: język jest stosunkowo łatwy do opanowania, można zacząć go używać już po kilku minutach nauki.</p>
+<p class="a">Zaleta2 – ogromna popularność: w Internecie jest mnóstwo gotowych, praktycznych przykładów i stron wykorzystujących JavaScript.</p>
+<p class="a">Zaleta3 – uniwersalność i odciążenie serwera: ogranicza ilość zbędnych danych przesyłanych między serwerem a przeglądarką, a aplikacje mogą działać bez przeładowania strony.</p>
+
+<p class="q">7)Framework to:</p>
+<p class="a">Rodzaj programu (zestaw gotowych narzędzi i bibliotek) ułatwiający tworzenie innych programów i aplikacji w JavaScript, np. Angular, React, Vue.</p>
+
+<p class="q">8)Do aplikacji mobilnych można użyć Framework</p>
+<p class="a">React Native – pozwala budować aplikacje mobilne na różne systemy operacyjne (cross-platform).</p>
+
+<p class="q">9)Aplikacje responsywne to:</p>
+<p class="a">Aplikacje i strony, które dopasowują swój wygląd do rozmiaru ekranu urządzenia. JavaScript pozwala pobrać bieżący rozmiar ekranu, a dzięki HTML i CSS można zmieniać rozmiar treści, ukrywać, zmniejszać, powiększać lub przesuwać elementy tak, aby dobrze wyglądały na każdym ekranie.</p>
+
+<p class="q">10)Przepisz linie kody pod nimi wytłumaczenie jak działa ten fragment kodu</p>
+<p class="a">&lsaquo;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&rsaquo;</p>
+<p class="a">Ta linia tworzy na stronie przycisk (input typu button) o nazwie „przycisk” z napisem „Nowa Strona”. Atrybut onclick oznacza zdarzenie kliknięcia – po kliknięciu przycisku wywoływana jest funkcja WinOpen(), która otwiera nowe okno przeglądarki.</p>
+
+<p class="q">11)Przepisz linie kody pod nimi wytłumaczenie jak działa ta ten fragment kodu</p>
+<p class="a">window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");</p>
+<p class="a">Metoda window.open() otwiera nowe okno przeglądarki. Pierwszy parametr ("obraz.html") to plik wyświetlany w nowym oknie, drugi ("okienko") to nazwa okna, a trzeci to lista opcji jego wyglądu:</p>
+<p class="a">toolbar=no – ukrywa pasek narzędzi (przyciski przeglądarki)</p>
+<p class="a">directories=no, – ukrywa przyciski katalogów (pasek łączy)</p>
+<p class="a">menubar=no, – ukrywa pasek menu</p>
+<p class="a">height=280, – wysokość okna to 280 pikseli</p>
+<p class="a">width=160, – szerokość okna to 160 pikseli</p>
+<p class="a">top=200, – odległość okna od górnej krawędzi ekranu to 200 pikseli</p>
+<p class="a">left=200 – odległość okna od lewej krawędzi ekranu to 200 pikseli</p>
+
+<p class="q">12)Opisz następującą instrukcję window.close()</p>
+<p class="a">Instrukcja window.close() zamyka bieżące okno przeglądarki (to, w którym została wywołana). Zwykle jest podpięta pod przycisk „zamknij okno”.</p>
+
+<hr>
+<p class="q">Jak wyświetlić instrukcję, która ma się tylko wyświetlić, a nie wykonać?</p>
+<p class="a">Pierwsza możliwość: znak &lt; zapisujemy jako &amp;lsaquo; (&lsaquo;), a znak &gt; jako &amp;rsaquo; (&rsaquo;) – przeglądarka wyświetla je jako zwykłe znaki i nie traktuje jako początku znacznika HTML.</p>
+<p class="a">Druga możliwość: kod umieszczamy w ramce, wewnątrz znacznika &lt;xmp&gt;...&lt;/xmp&gt; (lub &lt;pre&gt;), którego zawartość przeglądarka wyświetla dosłownie, bez interpretowania znaczników:</p>
+<div class="ramka"><xmp><!DOCTYPE html>
+<html lang="pl">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <title>Moja strona WWW</title>
+  <script type="text/javascript">
+  function onclickHandler()
+  {
+    alert('Akapit został kliknięty!');
+  }
+  </script>
+ </head>
+ <body>
+  <p onclick="onclickHandler();">Kliknij ten akapit,
+    a pojawi się okno dialogowe.</p>
+ </body>
+</html></xmp></div>
+
+<p><input type="button" value="zamknij okno" onclick="okno_zamknij_z4()"></p>
+</body>
+</html>

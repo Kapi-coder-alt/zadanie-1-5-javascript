@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Wojciechowski 3F - zadanie 5</title>
+  <script type="text/javascript">
+    /* Układ 3 (27 mod 4 = 3): cztery okna ustawione schodkowo od lewego dołu ku prawej górze,
+       okno z przyciskami na dole ekranu. Okna mają różne nazwy i się nie nakładają. */
+    function WinOpen_wojciechowski_1()
+    {
+      window.open("grafika1_woj.html","okienko_g1","toolbar=no,directories=no,menubar=no,height=380,width=260,top=470,left=60");
+    }
+    function WinOpen_wojciechowski_2()
+    {
+      window.open("grafika2_woj.html","okienko_g2","toolbar=no,directories=no,menubar=no,height=380,width=260,top=330,left=330");
+    }
+    function WinOpen_wojciechowski_3()
+    {
+      window.open("grafika3_woj.html","okienko_g3","toolbar=no,directories=no,menubar=no,height=380,width=260,top=190,left=600");
+    }
+    function WinOpen_wojciechowski_4()
+    {
+      window.open("grafika4_woj.html","okienko_g4","toolbar=no,directories=no,menubar=no,height=380,width=260,top=50,left=870");
+    }
+    function okno_zamknij_wojciechowski_5()
+    {
+      window.close()
+    }
+  </script>
+</head>
+<body style="text-align:center; margin:8px;">
+  <h1 style="color:red; font-size:26px; margin:4px 0 12px 0;">wykonał: Kacper Wojciechowski mój numer w dzienniku 27, czyli mam układ [(27) mod 4=3] układ 3</h1>
+  <form>
+    <input type="button" value="grafika1" onclick="WinOpen_wojciechowski_1()">
+    <input type="button" value="grafika2" onclick="WinOpen_wojciechowski_2()">
+    <input type="button" value="grafika3" onclick="WinOpen_wojciechowski_3()">
+    <input type="button" value="grafika4" onclick="WinOpen_wojciechowski_4()">
+    <br><br><br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_wojciechowski_5()">
+  </form>
+</body>
+</html>
